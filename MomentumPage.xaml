@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PhysicsCalculator.MomentumPage">
+	<ContentPage.Content>
+				<Grid>
+		<Image Source="Background.9.png" Aspect="AspectFill" />
+		<StackLayout Orientation="Vertical" Padding="10" VerticalOptions="FillAndExpand">
+			<StackLayout Padding="20" VerticalOptions="FillAndExpand">
+				<Label Text="Enter Any Two Values" HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="White" FontSize="19"/>
+			</StackLayout>
+			<ScrollView VerticalOptions="FillAndExpand">
+			<StackLayout Padding="25" VerticalOptions="FillAndExpand">
+				<Label Text="Momentum" HorizontalTextAlignment="Center" FontSize="18" TextColor="White"/>
+					<Entry Text="" x:Name="momentumEntry" Placeholder="Enter in Ns"/>
+				<Label Text="Mass" HorizontalTextAlignment="Center" FontSize="18" TextColor="White"/>
+					<Entry Text="" x:Name="massEntry" Placeholder="Enter in kg"/>
+				<Label Text="Velocity" HorizontalTextAlignment="Center" FontSize="18" TextColor="White"/>
+					<Entry Text="" x:Name="velocityEntry" Placeholder="Enter in m/s"/>
+				<Label Text="" x:Name="output" HorizontalTextAlignment="Center" TextColor="Red"/>
+			</StackLayout>
+				</ScrollView>
+			<StackLayout VerticalOptions="FillAndExpand">
+			 <Button Text="Calculate" x:Name="calculateButton" TextColor="Purple" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="Calculate" FontSize="23" FontAttributes="Bold"/>
+			</StackLayout>
+		</StackLayout>
+			</Grid>
+	</ContentPage.Content>
+</ContentPage>

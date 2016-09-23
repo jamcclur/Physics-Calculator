@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PhysicsCalculator.PotentialEnergyPage">
+	<ContentPage.Content>
+				<Grid>
+		<Image Source="Background.9.png" Aspect="AspectFill" />
+		<StackLayout VerticalOptions="FillAndExpand">
+			<StackLayout Padding="10" VerticalOptions="FillAndExpand">
+				<Label Text="Enter any three values" HorizontalOptions="Center" FontAttributes="Bold" TextColor="White" FontSize="19"/>
+			</StackLayout>
+			<ScrollView VerticalOptions="FillAndExpand">
+			<StackLayout VerticalOptions="FillAndExpand">
+				<Label Text="Potential Energy" HorizontalOptions="Center" FontSize="18" TextColor="White"/>
+					<Entry Text="" x:Name="peEntry" Placeholder="Enter in J" />
+				<Label Text="Mass" HorizontalOptions="Center" FontSize="18" TextColor="White"/>
+					<Entry Text="" x:Name="massEntry" Placeholder="Enter in kg" />
+				<Label Text="Acceleration" HorizontalOptions="Center" FontSize="18" TextColor="White"/>
+					<Entry Text="" x:Name="accEntry" Placeholder="Enter in m/s^2" />
+				<Label Text="Height" HorizontalOptions="Center" FontSize="18" TextColor="White"/>
+					<Entry Text="" x:Name="heightEntry" Placeholder="Enter in m"/>
+				<Label Text="" x:Name="output" HorizontalTextAlignment="Center" TextColor="White"/>
+			</StackLayout>
+				</ScrollView>
+			<StackLayout VerticalOptions="FillAndExpand">
+				<Button Text="Calculate" x:Name="calcButton" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="Purple" Clicked="Calculate" FontSize="23" FontAttributes="Bold"/>
+			</StackLayout>
+		</StackLayout>
+			</Grid>
+	</ContentPage.Content>
+</ContentPage>

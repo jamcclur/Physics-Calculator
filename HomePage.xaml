@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PhysicsCalculator.HomePage">
+	<ContentPage.Content>
+		<Grid>
+		<Image Source="Background.9.png" Aspect="AspectFill" />
+		<StackLayout Padding="20, 15" VerticalOptions="FillAndExpand">
+				<StackLayout Padding="20, 30" VerticalOptions="FillAndExpand">
+					<Label Text="Physics Calculator" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="35" TextColor="Teal"/>
+				</StackLayout>
+			<ScrollView VerticalOptions="FillAndExpand">
+				<StackLayout VerticalOptions="FillAndExpand">
+					<Button Text="Electricity" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="ElectricityPageNavigate" FontSize="30" TextColor="Purple"/>
+				<Button Text="Motion" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="MotionPageNavigate" FontSize="30" TextColor="Purple"/>
+				<Button Text="Newton's 2nd Law" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="NslPageNavigate" FontSize="30" TextColor="Purple"/>
+				<Button Text="Impulse" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="ImpulsePageNavigate" FontSize="30" TextColor="Purple"/>
+				<Button Text="Momentum" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="MomentumPageNavigate" FontSize="30" TextColor="Purple"/>
+				<Button Text="Potential Energy" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="PotentialEnergyPageNavigate" FontSize="30" TextColor="Purple"/>
+				<Button Text="Kinetic Friction" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="KineticFrictionPageNavigate" FontSize="30" TextColor="Purple"/>
+				</StackLayout>
+				</ScrollView>
+			</StackLayout>
+			</Grid>
+	</ContentPage.Content>
+</ContentPage>

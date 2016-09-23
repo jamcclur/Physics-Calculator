@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PhysicsCalculator.ElectricityPage">
+	<ContentPage.Content>
+				<Grid>
+		<Image Source="Background.9.png" Aspect="AspectFill" />
+		<StackLayout Orientation="Vertical" Padding="10" VerticalOptions="FillAndExpand">
+				<StackLayout Padding="20" VerticalOptions="FillAndExpand">
+					<Label Text="Enter Any Two Values" HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="White" FontSize="19"/>
+				</StackLayout>
+			<ScrollView VerticalOptions="FillAndExpand">
+				<StackLayout VerticalOptions="FillAndExpand">
+					<Label Text=" Voltage" HorizontalTextAlignment="Center" FontSize="18" TextColor="White"/>
+						<Entry Text="" x:Name="voltageEntry"/>
+					<Label Text=" Current" HorizontalTextAlignment="Center" FontSize="18" TextColor="White"/>
+						<Entry Text="" x:Name="currentEntry"/>
+					<Label Text=" Resistance" HorizontalTextAlignment="Center" FontSize="18" TextColor="White"/>
+						<Entry Text="" x:Name="resistanceEntry"/>
+					<Label Text=" Power" HorizontalTextAlignment="Center" FontSize="18" TextColor="White"/>
+						<Entry Text="" x:Name="powerEntry"/>
+					<Label Text="" x:Name="output" HorizontalTextAlignment="Center" TextColor="White"/>
+				</StackLayout>
+				</ScrollView>
+				<StackLayout VerticalOptions="FillAndExpand">
+				 <Button Text="Calculate" x:Name="calculateButton" TextColor="Purple" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="Calculate" FontSize="23" FontAttributes="Bold"/>
+				</StackLayout>
+		</StackLayout>
+			</Grid>
+	</ContentPage.Content>
+</ContentPage>
